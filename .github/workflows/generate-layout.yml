@@ -23,7 +23,7 @@ jobs:
 
       - name: Build and run Rust layout generator
         run: |
-          cd Mdfiles/layout_gen
+          cd layout_gen
           cargo build --release
           cd ..
           ./layout_gen/target/release/layout_gen
@@ -32,4 +32,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update layout json file [auto-generated]"
-          file_pattern: "Mdfiles/layout_rust.json"
+          file_pattern: "layout_rust.json"
