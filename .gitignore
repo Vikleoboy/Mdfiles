@@ -1,0 +1,21 @@
+# Ignore Rust/Cargo build artifacts and dependencies
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
+.DS_Store
+
+# Ignore Python cache (if any)
+__pycache__/
+
+# Ignore node_modules (if any JS tooling is used)
+node_modules/
+
+# Ignore by convention
+*.log
+
+# Ignore layout_rust.json if you don't want to track it (optional)
+# layout_rust.json 
