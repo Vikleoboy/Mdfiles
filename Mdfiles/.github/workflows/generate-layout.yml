@@ -1,0 +1,35 @@
+name: Generate Layout JSON
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  generate-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - name: Build and run Rust layout generator
+        run: |
+          cd Mdfiles/layout_gen
+          cargo build --release
+          cd ..
+          ./layout_gen/target/release/layout_gen
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update layout json file [auto-generated]"
+          file_pattern: "Mdfiles/layout_rust.json"
