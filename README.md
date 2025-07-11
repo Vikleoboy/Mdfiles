@@ -4,21 +4,18 @@ This repository contains markdown files organized into folders such as `projects
 
 ## Generating the Layout JSON
 
-### Python
-
-To generate the layout JSON using Python:
-
-```sh
-cd Mdfiles
-python3 generate_layout.py
-```
-
-This will create `layout_python.json` in the `Mdfiles` directory.
-
 ### Rust
 
-See `layout_gen/README.md` for details on building and running the Rust version.
+To generate the layout JSON using Rust:
 
-### GitHub Actions
+```sh
+# Build the Rust binary (only needed once or after changes)
+cd layout_gen
+cargo build --release
+cd ..
 
-A GitHub Actions workflow is set up to automatically run both the Python and Rust scripts on every push to `main`. The generated JSON files are committed back to the repository automatically. 
+# Run the binary from the project root
+./layout_gen/target/release/layout_gen
+```
+
+This will create `layout_rust.json` in the project root directory. 
