@@ -34,3 +34,5 @@ jobs:
         with:
           commit_message: "chore: update layout json file [auto-generated]"
           file_pattern: "layout_rust.json"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
