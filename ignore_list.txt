@@ -1,0 +1,10 @@
+.git
+.DS_Store
+__pycache__
+.gitkeep
+layout_gen
+.github
+README.md
+ignore_list.txt
+.gitignore
+layout_rust.json

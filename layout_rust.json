@@ -4,42 +4,70 @@
   "path": "",
   "children": [
     {
-      "name": "layout_rust.json",
-      "type": "file",
-      "path": "layout_rust.json",
-      "date_created": "1752228223"
-    },
-    {
-      "name": "README.md",
-      "type": "file",
-      "path": "README.md",
-      "date_created": "1752228222"
-    },
-    {
-      "name": ".github",
-      "type": "folder",
-      "path": ".github",
-      "children": [
-        {
-          "name": "workflows",
-          "type": "folder",
-          "path": ".github/workflows",
-          "children": [
-            {
-              "name": "generate-layout.yml",
-              "type": "file",
-              "path": ".github/workflows/generate-layout.yml",
-              "date_created": "1752228222"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Mdfiles",
       "type": "folder",
       "path": "Mdfiles",
       "children": [
+        {
+          "name": "blogs",
+          "type": "folder",
+          "path": "Mdfiles/blogs",
+          "children": [
+            {
+              "name": "blog2.md",
+              "type": "file",
+              "path": "Mdfiles/blogs/blog2.md",
+              "date_created": "2025-07-11 17:16:10",
+              "metadata": {
+                "title": "Second Blog Post",
+                "description": "This is the second example blog post.",
+                "tags": [
+                  "rust",
+                  "howto"
+                ],
+                "similar_posts": [],
+                "date": "2024-05-21",
+                "category": "blog",
+                "author": "Vikleo"
+              }
+            },
+            {
+              "name": "blog1.md",
+              "type": "file",
+              "path": "Mdfiles/blogs/blog1.md",
+              "date_created": "2025-07-11 17:15:53",
+              "metadata": {
+                "title": "First Blog Post",
+                "description": "This is the first example blog post.",
+                "tags": [
+                  "rust",
+                  "example"
+                ],
+                "similar_posts": [],
+                "date": "2024-05-20",
+                "category": "blog",
+                "author": "Vikleo"
+              }
+            },
+            {
+              "name": "newblog.md",
+              "type": "file",
+              "path": "Mdfiles/blogs/newblog.md",
+              "date_created": "2025-07-11 13:58:15",
+              "metadata": {
+                "title": "First Blog Post",
+                "description": "No description provided.",
+                "tags": [
+                  "general"
+                ],
+                "similar_posts": [],
+                "date": "1970-01-01",
+                "category": "uncategorized",
+                "author": "Anonymous"
+              }
+            }
+          ]
+        },
         {
           "name": "projects",
           "type": "folder",
@@ -49,48 +77,41 @@
               "name": "project2.md",
               "type": "file",
               "path": "Mdfiles/projects/project2.md",
-              "date_created": "1752228222"
+              "date_created": "2025-07-11 17:16:31",
+              "metadata": {
+                "title": "Project Two",
+                "description": "This is the second example project.",
+                "tags": [
+                  "rust",
+                  "demo"
+                ],
+                "similar_posts": [],
+                "date": "2024-05-19",
+                "category": "project",
+                "author": "Vikleo"
+              }
             },
             {
               "name": "project1.md",
               "type": "file",
               "path": "Mdfiles/projects/project1.md",
-              "date_created": "1752228222"
-            }
-          ]
-        },
-        {
-          "name": "blogs",
-          "type": "folder",
-          "path": "Mdfiles/blogs",
-          "children": [
-            {
-              "name": "blog1.md",
-              "type": "file",
-              "path": "Mdfiles/blogs/blog1.md",
-              "date_created": "1752228222"
-            },
-            {
-              "name": "blog2.md",
-              "type": "file",
-              "path": "Mdfiles/blogs/blog2.md",
-              "date_created": "1752228222"
-            },
-            {
-              "name": "newblog.md",
-              "type": "file",
-              "path": "Mdfiles/blogs/newblog.md",
-              "date_created": "1752228222"
+              "date_created": "2025-07-11 17:16:23",
+              "metadata": {
+                "title": "Project One",
+                "description": "This is the first example project.",
+                "tags": [
+                  "rust",
+                  "project"
+                ],
+                "similar_posts": [],
+                "date": "2024-05-18",
+                "category": "project",
+                "author": "Vikleo"
+              }
             }
           ]
         }
       ]
-    },
-    {
-      "name": "generate_layout.py",
-      "type": "file",
-      "path": "generate_layout.py",
-      "date_created": "1752228222"
     }
   ]
 }
