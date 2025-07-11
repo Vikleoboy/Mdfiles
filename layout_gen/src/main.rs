@@ -22,12 +22,17 @@ struct Node {
     children: Option<Vec<Node>>,
 }
 
-fn get_structure(path: &Path, root: &Path) -> Node {
+fn get_structure(path: &Path, root: &Path) -> Option<Node> {
     let name = path.file_name().unwrap().to_string_lossy().to_string();
     let rel_path = path.strip_prefix(root).unwrap_or(path).to_string_lossy().to_string();
 
+    // Ignore the layout_gen folder
+    if name == "layout_gen" {
+        return None;
+    }
+
     if path.is_dir() {
-        let children = fs::read_dir(path)
+        let children: Vec<Node> = fs::read_dir(path)
             .unwrap()
             .filter_map(|entry| {
                 let entry = entry.ok()?;
@@ -37,19 +42,20 @@ fn get_structure(path: &Path, root: &Path) -> Node {
                     || fname == ".DS_Store"
                     || fname == "__pycache__"
                     || fname == ".gitkeep"
+                    || fname == "layout_gen" // Ignore layout_gen folder
                 {
                     return None;
                 }
-                Some(get_structure(&entry.path(), root))
+                get_structure(&entry.path(), root)
             })
             .collect();
-        Node {
+        Some(Node {
             name,
             node_type: NodeType::Folder,
             path: rel_path,
             date_created: None,
             children: Some(children),
-        }
+        })
     } else {
         // Get created date (fallback to modified if not available)
         let metadata = fs::metadata(path).ok();
@@ -58,20 +64,24 @@ fn get_structure(path: &Path, root: &Path) -> Node {
             .and_then(|t| t.duration_since(UNIX_EPOCH).ok())
             .map(|d| d.as_secs().to_string());
 
-        Node {
+        Some(Node {
             name,
             node_type: NodeType::File,
             path: rel_path,
             date_created: created,
             children: None,
-        }
+        })
     }
 }
 
 fn main() {
     let root = std::env::current_dir().unwrap();
     let structure = get_structure(&root, &root);
-    let json = serde_json::to_string_pretty(&structure).unwrap();
-    fs::write(root.join("layout_rust.json"), json).unwrap();
-    println!("layout_rust.json generated.");
+    if let Some(structure) = structure {
+        let json = serde_json::to_string_pretty(&structure).unwrap();
+        fs::write(root.join("layout_rust.json"), json).unwrap();
+        println!("layout_rust.json generated.");
+    } else {
+        println!("No structure generated.");
+    }
 }

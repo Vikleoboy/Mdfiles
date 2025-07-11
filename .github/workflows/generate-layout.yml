@@ -21,12 +21,13 @@ jobs:
           toolchain: stable
           override: true
 
-      - name: Build and run Rust layout generator
+      - name: Build Rust layout generator
         run: |
           cd layout_gen
           cargo build --release
-          cd ..
-          ./layout_gen/target/release/layout_gen
+
+      - name: Run Rust layout generator from root
+        run: ./layout_gen/target/release/layout_gen
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
