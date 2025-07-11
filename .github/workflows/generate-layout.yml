@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          persist-credentials: true
 
       - name: Set up Rust
         uses: actions-rs/toolchain@v1
@@ -34,6 +34,6 @@ jobs:
         with:
           commit_message: "chore: update layout json file [auto-generated]"
           file_pattern: "layout_rust.json"
-          persist_credentials: true
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
