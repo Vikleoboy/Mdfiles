@@ -18,4 +18,4 @@ node_modules/
 *.log
 
 # Ignore layout_rust.json if you don't want to track it (optional)
-# layout_rust.json 
+layout_rust.json 
