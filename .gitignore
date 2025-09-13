@@ -17,5 +17,6 @@ node_modules/
 # Ignore by convention
 *.log
 
+layout_gen/target
 # Ignore layout_rust.json if you don't want to track it (optional)
 layout_rust.json 
