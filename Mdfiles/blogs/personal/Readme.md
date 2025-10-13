@@ -1,3 +1,3 @@
 # Personal Folder
 
-This folder is where i keep some of my , notes to myself , and the things i wanaa say to myself .
+This folder is where I keep some of my notes to myself , and the things I wanaa say to myself .

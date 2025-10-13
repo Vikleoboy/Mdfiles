@@ -1,5 +1,5 @@
 ---
-title: "Personal Blog Post"
+title: "Personal Blog Post(Demo blog )"
 category: blog
 tags: [rust, example, personal, journey]
 author: Vikleo
@@ -16,7 +16,7 @@ Hello everyone! I’m Vikleo, and today I want to share a bit about my personal 
 My fascination with computers started at a young age. I remember the first time I wrote a simple program in Rust—it was both confusing and exhilarating. The feeling of making something work, even if it was just printing "Hello, World!", was magical.
 
 ![Old Computer Setup](https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80)
-*My first computer setup—nostalgic and messy!*
+_My first computer setup—nostalgic and messy!_
 
 ## Learning and Growth
 
@@ -28,9 +28,10 @@ As I dove deeper, I realized that learning to code is not just about syntax, but
 
 Rust quickly became my favorite language. Its safety, speed, and community support are unmatched. Here’s a small snippet that changed how I think about ownership and memory:
 
-````rust
+```rust
 fn main() {
     let s = String::from("hello");
     println!("{}", s);
 }
-````
+```
+
