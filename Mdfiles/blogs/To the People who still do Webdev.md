@@ -15,3 +15,5 @@ THIS IS NIGHTMARE FOR ME.
 SUCH a world is full of rubbish and is rubbish itself! There is no certainty in this world, and the fact that there is always some abstractions on top of something else is just crazy to me!
 And yes, I was limited to such world myself. This is what is wrong with languages like Python, JavaScript, they don't really introduce you to the long history of development, they never teach you how the computers really work. Just imagine ignoring all the work of so many people, actual code that made an impact in their time, that was actual innovation that they did, people whose code runs this world but is invisible to the eye of the ignorant.
 
+i am still writeing the full blog ..
+
