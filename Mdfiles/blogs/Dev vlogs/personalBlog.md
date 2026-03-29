@@ -34,4 +34,3 @@ fn main() {
     println!("{}", s);
 }
 ```
-

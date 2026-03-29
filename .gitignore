@@ -11,6 +11,10 @@ Cargo.lock
 # Ignore Python cache (if any)
 __pycache__/
 
+# ignore private folders 
+pvt
+
+
 # Ignore node_modules (if any JS tooling is used)
 node_modules/
 
