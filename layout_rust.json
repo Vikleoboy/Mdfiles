@@ -17,7 +17,7 @@
               "name": "Wallpaper Manager.md",
               "type": "file",
               "path": "Mdfiles/projects/Wallpaper Manager.md",
-              "date_created": "2026-03-29 13:44:17",
+              "date_created": "2026-03-29 14:01:11",
               "metadata": {
                 "title": "Project One",
                 "description": "I wanted something that can change my wallapers , based on what I like ",
@@ -35,7 +35,7 @@
               "name": "Epub Book Reader.md",
               "type": "file",
               "path": "Mdfiles/projects/Epub Book Reader.md",
-              "date_created": "2026-03-29 13:44:17",
+              "date_created": "2026-03-29 14:01:11",
               "metadata": {
                 "title": "Epub book Reader",
                 "description": "I thought there was no good epub book reader ",
@@ -70,7 +70,7 @@
                       "name": "Readme.md",
                       "type": "file",
                       "path": "Mdfiles/blogs/Dev vlogs/p2pChat/Readme.md",
-                      "date_created": "2026-03-29 13:44:17",
+                      "date_created": "2026-03-29 14:01:11",
                       "metadata": {
                         "title": "",
                         "description": "",
@@ -92,7 +92,7 @@
                       "name": "Readme.md",
                       "type": "file",
                       "path": "Mdfiles/blogs/Dev vlogs/forums/Readme.md",
-                      "date_created": "2026-03-29 13:44:17",
+                      "date_created": "2026-03-29 14:01:11",
                       "metadata": {
                         "title": "",
                         "description": "",
@@ -109,7 +109,7 @@
                   "name": "personalBlog.md",
                   "type": "file",
                   "path": "Mdfiles/blogs/Dev vlogs/personalBlog.md",
-                  "date_created": "2026-03-29 13:44:17",
+                  "date_created": "2026-03-29 14:01:11",
                   "metadata": {
                     "title": "Personal Blog Post(Demo blog )",
                     "description": "This is a detailed personal blog post sharing my journey, thoughts, and inspirations.",
@@ -131,10 +131,29 @@
                   "path": "Mdfiles/blogs/Dev vlogs/game_engine",
                   "children": [
                     {
+                      "name": "Why_C?.md",
+                      "type": "file",
+                      "path": "Mdfiles/blogs/Dev vlogs/game_engine/Why_C?.md",
+                      "date_created": "2026-03-29 14:01:11",
+                      "metadata": {
+                        "title": "Why C ",
+                        "description": "My Views Around C programming Language",
+                        "tags": [
+                          "c",
+                          "personal",
+                          "journey"
+                        ],
+                        "similar_posts": [],
+                        "date": "2025-03-25",
+                        "category": "blog",
+                        "author": "Vikleo"
+                      }
+                    },
+                    {
                       "name": "Readme.md",
                       "type": "file",
                       "path": "Mdfiles/blogs/Dev vlogs/game_engine/Readme.md",
-                      "date_created": "2026-03-29 13:44:17",
+                      "date_created": "2026-03-29 14:01:11",
                       "metadata": {
                         "title": "",
                         "description": "",
@@ -151,7 +170,7 @@
                   "name": "Readme.md",
                   "type": "file",
                   "path": "Mdfiles/blogs/Dev vlogs/Readme.md",
-                  "date_created": "2026-03-29 13:44:17",
+                  "date_created": "2026-03-29 14:01:11",
                   "metadata": {
                     "title": "",
                     "description": "",
@@ -168,7 +187,7 @@
               "name": "To the People who still do Webdev.md",
               "type": "file",
               "path": "Mdfiles/blogs/To the People who still do Webdev.md",
-              "date_created": "2026-03-29 13:44:17",
+              "date_created": "2026-03-29 14:01:11",
               "metadata": {
                 "title": "To people who are still doing Webdev",
                 "description": "This is the first example blog post.",
