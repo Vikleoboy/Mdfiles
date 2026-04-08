@@ -1,5 +1,5 @@
 ---
-title: "Forum: Building a Reddit-Scale Community Platform for Colleges and Companies"
+title: "Forum: Community Platform for Colleges and Companies"
 category: project
 tags: [rust, nextjs, postgresql, fullstack, project, security, community]
 author: Vikleo
